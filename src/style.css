@@ -541,19 +541,19 @@ address {
 }
 
 .contacts__email::before {
-  content: url("../assets/icons/Envelope.svg");
+  content: url("./assets/icons/Envelope.svg");
   position: absolute;
   left: 0;
 }
 
 .contacts__telephone::before {
-  content: url("../assets/icons/Phone.svg");
+  content: url("./assets/icons/Phone.svg");
   position: absolute;
   left: 0;
 }
 
 .contacts__address::before {
-  content: url("../assets/icons/HouseLine.svg");
+  content: url("./assets/icons/HouseLine.svg");
   position: absolute;
   left: 0;
 }
