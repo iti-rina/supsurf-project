@@ -178,6 +178,9 @@ main {
 
 .about__text {
   width: 847px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* наши доски */
