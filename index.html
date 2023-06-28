@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./src/style_mob.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=fallback" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta 
       name="keywords" 
@@ -81,7 +81,12 @@
               <div class="sup-boards__card board">
                 <span class="board__title">Gladiator ORIGIN</span>
                 <div class="board__main-info">
-                  <img src="./assets/img/gladiator_origin.png" alt="фото сапборда Gladiator origin" class="board__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/img/webp_img/gladiator_origin.webp" alt="фото сапборда Gladiator origin" class="board__img">
+                    <source type="image/png" srcset="./assets/img/gladiator_origin.png" alt="фото сапборда Gladiator origin" class="board__img">
+                    <img src="./assets/img/gladiator_origin.png" alt="фото сапборда Gladiator origin" class="board__img">
+                  </picture>
+          
                   <div class="board__params">
                     <div class="param">
                       <span class="param__title">Длина доски</span>
@@ -110,7 +115,12 @@
               <div class="sup-boards__card board">
                 <span class="board__title">bombitto extra wild</span>
                 <div class="board__main-info">
-                  <img src="./assets/img/bombitto_extra_wild.png" alt="фото сапборда Bombitto extra wild" class="board__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/img/webp_img/bombitto_extra_wild.webp" alt="фото сапборда Bombitto extra wild" class="board__img">
+                    <source type="image/png" srcset="./assets/img/png_img/bombitto_extra_wild.png" alt="фото сапборда Bombitto extra wild" class="board__img">
+                    <img src="./assets/img/png_img/bombitto_extra_wild.png" alt="фото сапборда Bombitto extra wild" class="board__img">
+                  </picture>
+
                   <div class="board__params">
                     <div class="param">
                       <span class="param__title">Длина доски</span>
@@ -139,7 +149,12 @@
               <div class="sup-boards__card board">
                 <span class="board__title">bestway panorama</span>
                 <div class="board__main-info">
-                  <img src="./assets/img/bestway_panorama.png" alt="фото сапборда Bestway Panorama" class="board__img">
+                  <picture>
+                    <source type="image/webp" srcset="./assets/img/webp_img/bestway_panorama.webp" alt="фото сапборда Bestway Panorama" class="board__img">
+                    <source type="image/png" srcset="./assets/img/png_img/bestway_panorama.png" alt="фото сапборда Bestway Panorama" class="board__img">
+                    <img src="./assets/img/png_img/bestway_panorama.png" alt="фото сапборда Bestway Panorama" class="board__img">
+                  </picture>
+
                   <div class="board__params">
                     <div class="param">
                       <span class="param__title">Длина доски</span>
@@ -177,27 +192,48 @@
           <div class="equipment__wrapper">
 
             <div class="equipment__item">
-              <img class="equipment__image" src="./assets/img/leash.png" alt="фото лиша">
+              <picture>
+                <source type="image/webp" srcset="./assets/img/webp_img/leash.webp" alt="фото лиша" class="equipment__image">
+                <source type="image/png" srcset="./assets/img/png_img/leash.png" alt="фото лиша" class="equipment__image">
+                <img src="./assets/img/png_img/leash.png" alt="фото лиша" class="equipment__image">
+              </picture>
+
               <span class="equipment__description">Лиш</span>
             </div>
 
             <div class="equipment__item">
-              <img class="equipment__image" src="./assets/img/paddle.png" alt="фото весла">
+              <picture>
+                <source type="image/webp" srcset="./assets/img/webp_img/paddle.webp" alt="фото весла" class="equipment__image">
+                <source type="image/png" srcset="./assets/img/png_img/paddle.png" alt="фото весла" class="equipment__image">
+                <img src="./assets/img/png_img/paddle.png" alt="фото весла" class="equipment__image">
+              </picture>
               <span class="equipment__description">Весло</span>
             </div>
 
             <div class="equipment__item">
-              <img class="equipment__image" src="./assets/img/pump.png" alt="фото насоса">
+              <picture>
+                <source type="image/webp" srcset="./assets/img/webp_img/pump.webp" alt="фото насоса" class="equipment__image">
+                <source type="image/png" srcset="./assets/img/png_img/pump.png" alt="фото насоса" class="equipment__image">
+                <img src="./assets/img/png_img/pump.png" alt="фото насоса" class="equipment__image">
+              </picture>
               <span class="equipment__description">Насос</span>
             </div>
 
             <div class="equipment__item">
-              <img class="equipment__image" src="./assets/img/fin.png" alt="фото плавника для сапборда">
+              <picture>
+                <source type="image/webp" srcset="./assets/img/webp_img/fin.webp" alt="фото плавника для сапборда" class="equipment__image">
+                <source type="image/png" srcset="./assets/img/png_img/fin.png" alt="фото плавника для сапборда" class="equipment__image">
+                <img src="./assets/img/png_img/fin.png" alt="фото плавника для сапборда" class="equipment__image">
+              </picture>
               <span class="equipment__description">Плавник</span>
             </div>
 
             <div class="equipment__item">
-              <img class="equipment__image" src="./assets/img/backpack.png" alt="фото рюкзака для сапборда">
+              <picture>
+                <source type="image/webp" srcset="./assets/img/webp_img/backpack.webp" alt="фото рюкзака для сапборда" class="equipment__image">
+                <source type="image/png" srcset="./assets/img/png_img/backpack.png" alt="фото рюкзака для сапборда" class="equipment__image">
+                <img src="./assets/img/png_img/backpack.png" alt="фото рюкзака для сапборда" class="equipment__image">
+              </picture>
               <span class="equipment__description">Рюкзак</span>
             </div>
 
@@ -214,27 +250,51 @@
           <div class="addons__wrapper">
             <div class="addons__item">
               <span class="item__title">Электронасос</span>
-              <img class="item__image" src="./assets/img/electric_pump.png" alt="фото электрического насоса">
+
+              <picture>
+                <source type="image/webp" srcset="./assets/img/webp_img/electric_pump.webp" alt="фото электрического насоса" class="item__image">
+                <source type="image/png" srcset="./assets/img/png_img/electric_pump.png" alt="фото электрического насоса" class="item__image">
+                <img src="./assets/img/png_img/electric_pump.png" alt="фото электрического насоса" class="item__image">
+              </picture>
+
               <span class="item__description">Для накачивания/сдувания досок.
                 Работает от автомобильного прикуривателя.</span>
             </div>
 
             <div class="addons__item">
               <span class="item__title">спасжилет</span>
-              <img class="item__image" src="./assets/img/life_vest.png" alt="фото спасательного жилета">
+
+              <picture>
+                <source type="image/webp" srcset="./assets/img/webp_img/life_vest.webp" alt="фото спасательного жилета" class="item__image">
+                <source type="image/png" srcset="./assets/img/png_img/life_vest.png" alt="фото спасательного жилета" class="item__image">
+                <img src="./assets/img/png_img/life_vest.png" alt="фото спасательного жилета" class="item__image">
+              </picture>
+
               <span class="item__description">Для безопасности на воде.
                 Позаботьтесь о своих близких.</span>
             </div>
 
             <div class="addons__item">
               <span class="item__title">гермомешок</span>
-              <img class="item__image" src="./assets/img/waterproof_bag.png" alt="фото гермомешка">
+
+              <picture>
+                <source type="image/webp" srcset="./assets/img/webp_img/waterproof_bag.webp" alt="фото гермомешка" class="item__image">
+                <source type="image/png" srcset="./assets/img/png_img/waterproof_bag.png" alt="фото гермомешка" class="item__image">
+                <img src="./assets/img/png_img/waterproof_bag.png" alt="фото гермомешка" class="item__image">
+              </picture>
+
               <span class="item__description">Гермомешок защитит ваши вещи от попадания воды и не даст им утонуть.</span>
             </div>
 
             <div class="addons__item">
               <span class="item__title">Чехол для телефона</span>
-              <img class="item__image" src="./assets/img/waterproof_phone_case.png" alt="фото водонепроницаемого чехла для телефона">
+
+              <picture>
+                <source type="image/webp" srcset="./assets/img/webp_img/waterproof_phone_case.webp" alt="фото водонепроницаемого чехла для телефона" class="item__image">
+                <source type="image/png" srcset="./assets/img/png_img/waterproof_phone_case.png" alt="фото водонепроницаемого чехла для телефона" class="item__image">
+                <img src="./assets/img/png_img/waterproof_phone_case.png" alt="фото водонепроницаемого чехла для телефона" class="item__image">
+              </picture>
+
               <span class="item__description">Непромокаемый чехол спасет ваш телефон от воды и не даст ему утонуть.</span>
             </div>
           </div>
