@@ -43,6 +43,25 @@ btnWrapper.addEventListener("click", (e) => {
   }
 })
 
+// галерея
+
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 20,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+
 // обработка faq
 const answers = document.querySelectorAll(".faq__item");
 answers.forEach(event => {

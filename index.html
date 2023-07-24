@@ -21,6 +21,11 @@
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=90ccc97e-1a93-4e09-8631-6eda2d473203&lang=ru_RU" type="text/javascript"></script>
     <script defer src="./src/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <title>Аренда SUP-бордов в Абакане</title>
     
   </head>
@@ -409,14 +414,28 @@
       <section class="gallery-section" id="gallery">
         <div class="container gallery">
           <h2 class="block__title">галерея</h2>
-          <div class="gallery__inner">
-            <img class="gallery__item" src="./assets/img/gallery/1.png" alt="фото сапбордов из галереи">
-            <img class="gallery__item" src="./assets/img/gallery/2.png" alt="фото сапбордов из галереи">
-            <img class="gallery__item" src="./assets/img/gallery/3.png" alt="фото сапбордов из галереи">
-            <img class="gallery__item" src="./assets/img/gallery/4.png" alt="фото сапбордов из галереи">
-            <img class="gallery__item" src="./assets/img/gallery/5.png" alt="фото сапбордов из галереи">
-            <img class="gallery__item" src="./assets/img/gallery/6.png" alt="фото сапбордов из галереи">
+          
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <img class="gallery__item swiper-slide" src="./assets/img/gallery/7.webp" alt="фото сапбордов из галереи">
+              <img class="gallery__item swiper-slide" src="./assets/img/gallery/5.webp" alt="фото сапбордов из галереи">
+              <img class="gallery__item swiper-slide" src="./assets/img/gallery/8.webp" alt="фото сапбордов из галереи">
+              <img class="gallery__item swiper-slide" src="./assets/img/gallery/1.webp" alt="фото сапбордов из галереи">
+              <img class="gallery__item swiper-slide" src="./assets/img/gallery/2.webp" alt="фото сапбордов из галереи">
+              <img class="gallery__item swiper-slide" src="./assets/img/gallery/3.webp" alt="фото сапбордов из галереи">
+              <img class="gallery__item swiper-slide" src="./assets/img/gallery/9.webp" alt="фото сапбордов из галереи">
+              <img class="gallery__item swiper-slide" src="./assets/img/gallery/4.webp" alt="фото сапбордов из галереи">
+              <img class="gallery__item swiper-slide" src="./assets/img/gallery/6.webp" alt="фото сапбордов из галереи">
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
           </div>
+        </div>
+
 
         </div>
 
