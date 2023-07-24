@@ -297,7 +297,7 @@
   /* галерея */
 
   .gallery {
-    /* display: none; */
+    display: none;
   }
 
   .gallery-mobile {
