@@ -393,10 +393,6 @@ tbody {
 
 /* галерея */
 
-.gallery-mobile {
-  display: none;
-}
-
 .gallery {
   padding: 68px 73px 60px;
   display: flex;
@@ -420,6 +416,7 @@ tbody {
   --swiper-pagination-bullet-inactive-opacity: 1;
 
 }
+
 /* вопросы и ответы */
 .faq {
   display: flex;

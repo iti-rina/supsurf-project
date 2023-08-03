@@ -4,7 +4,6 @@ const menu = document.querySelector(".header__menu");
 const body = document.querySelector("body");
 
 menuBtn.addEventListener("click", (e) => {
-  console.log(e);
   menu.classList.toggle("header__menu_active");
   body.classList.toggle("menu-opened");
   menuBtn.classList.toggle("header__button_opened");
@@ -19,38 +18,21 @@ menu.addEventListener("click", (e) => {
   }
 });
 
-
-// галерея для мобилок
-
-const btnWrapper = document.querySelector(".gallery-mobile__buttons-wrapper");
-const slider = document.querySelector(".gallery-mobile__inner");
-
-btnWrapper.addEventListener("click", (e) => {
-  if (e.target.nodeName === "BUTTON") {
-    [...btnWrapper.children].forEach(item => {
-      item.classList.remove("active");
-    });
-    if (e.target.classList.contains("buttons__one")) {
-      slider.style.transform = "translateX(-0%)";
-      e.target.classList.add("active");
-    } else if (e.target.classList.contains("buttons__two")) {
-      slider.style.transform = `translateX(${-(151 + 10)*2}px)`;
-      e.target.classList.add("active");
-    } else if (e.target.classList.contains("buttons__three")) {
-      slider.style.transform = `translateX(${-(151 + 10) * 4}px)`;
-      e.target.classList.add("active");
-    }   
-  }
-})
-
 // галерея
 
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  spaceBetween: 20,
+  slidesPerView: 1,
+  spaceBetween: 10,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      slidesPerGroup: 3,
+    },
+  },
 
   pagination: {
     el: '.swiper-pagination',
@@ -101,15 +83,8 @@ document.getElementById('price-column__header').addEventListener('click', () => 
 
 ymaps.ready(init);
 function init(){
-  // Создание карты.
   var myMap = new ymaps.Map("map", {
-      // Координаты центра карты.
-      // Порядок по умолчанию: «широта, долгота».
-      // Чтобы не определять координаты центра карты вручную,
-      // воспользуйтесь инструментом Определение координат.
       center: [53.717560, 91.435803],
-      // Уровень масштабирования. Допустимые значения:
-      // от 0 (весь мир) до 19.
       zoom: 17
   });
   var myPlacemark = new ymaps.Placemark([53.717560, 91.435803]);

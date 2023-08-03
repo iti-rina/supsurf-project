@@ -296,48 +296,8 @@
 
   /* галерея */
 
-  .gallery {
-    display: none;
-  }
-
-  .gallery-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    overflow-x: hidden;
-  }
-  .g-wrapper {
-    width: 100%;
-    padding: 0 24px;
-  }
-
-  .gallery-mobile__inner {
-    width: 100%;
-    gap: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .gallery-mobile__item {
-    width: 151px;
-  }
-
-  .buttons__one,
-  .buttons__two,
-  .buttons__three {
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-    border: none;
-    outline: none;
-    background-color: #D9D9D9;
-  }
-
-  .buttons__one.active,
-  .buttons__two.active,
-  .buttons__three.active {
-    background-color: #39674E;
+  .swiper {
+    width: 240px;
   }
 
   /* вопросы и ответы */
@@ -479,20 +439,5 @@
     justify-self: center;
     margin-top: 12px;
   }
-
-
-  
-
-
-  
-
-  
-
-
-  
-
-  
-
-
   
 }
