@@ -18,4 +18,11 @@ I was made all the entire deployment process by myself:
 - set up Nginx server;
 - worked with domain name and DNS.
 
+## Link to the website
+
+http://sup19.ru 
+
+(work on adding SSL-certificate is in progress)
+
+
 
