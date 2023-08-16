@@ -2,7 +2,7 @@
 
 ![our-boards](https://github.com/iti-rina/supsurf-project/raw/main/docs/cover-desktop.png)
 
-It's a simple landing page so HTML, CSS and only vanilla JS were used here. Now it's available on http://sup19.ru
+It's a simple landing page so HTML, CSS and only vanilla JS were used here. Now it's available on https://sup19.ru
 
 ![our-boards](https://github.com/iti-rina/supsurf-project/raw/main/docs/our-boards-block.png)
 
@@ -20,9 +20,6 @@ I was made all the entire deployment process by myself:
 
 ## Link to the website
 
-http://sup19.ru 
-
-(work on adding SSL-certificate is in progress)
-
+https://sup19.ru 
 
 
