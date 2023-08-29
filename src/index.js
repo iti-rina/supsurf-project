@@ -58,25 +58,25 @@ answers.forEach(event => {
 
 // обработка в таблице цен
 
-let isWeekend = null;
-document.getElementById('price-column__header').addEventListener('click', () => {
-  let day = document.getElementById('price-column__header').firstChild;
-  let priceForOne = document.getElementById("priceForOne");
-  let priceForTwo = document.getElementById("priceForTwo");
-  let priceForThree = document.getElementById("priceForThree");
+// let isWeekend = null;
+// document.getElementById('price-column__header').addEventListener('click', () => {
+//   let day = document.getElementById('price-column__header').firstChild;
+//   let priceForOne = document.getElementById("priceForOne");
+//   let priceForTwo = document.getElementById("priceForTwo");
+//   let priceForThree = document.getElementById("priceForThree");
 
-  if (day.textContent.startsWith('Выходные')) {
-    day.textContent = "Будние дни";
-    priceForOne.textContent = "1000";
-    priceForTwo.textContent = "1800";
-    priceForThree.textContent = "2500";
-  } else {
-    day.textContent = "Выходные";
-    priceForOne.textContent = "1300";
-    priceForTwo.textContent = "2500";
-    priceForThree.textContent = "3500";
-  }
-});
+//   if (day.textContent.startsWith('Выходные')) {
+//     day.textContent = "Будние дни";
+//     priceForOne.textContent = "1000";
+//     priceForTwo.textContent = "1800";
+//     priceForThree.textContent = "2500";
+//   } else {
+//     day.textContent = "Выходные";
+//     priceForOne.textContent = "1300";
+//     priceForTwo.textContent = "2500";
+//     priceForThree.textContent = "3500";
+//   }
+// });
 
 
 // карта
