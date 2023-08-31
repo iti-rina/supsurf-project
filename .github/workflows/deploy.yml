@@ -17,7 +17,7 @@ jobs:
         run: ssh ${{ secrets.user_name }}@${{ secrets.host }}
 
       - name: Delete old /var/www/html
-        run: sudo -i && rm -rf /var/www/html
+        run: sudo rm -rf /var/www/html
 
       - name: Disconnect with vm
         run: exit
