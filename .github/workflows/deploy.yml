@@ -20,4 +20,4 @@ jobs:
         run: exit
       
       - name: Copy files to remote server
-        run: scp -r $PWD/* iti-rina@${{ secrets.host }}:/var/www/html
+        run: scp -r $PWD/* root@${{ secrets.host }}:/var/www/html
