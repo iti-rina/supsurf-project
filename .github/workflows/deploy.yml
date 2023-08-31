@@ -16,6 +16,9 @@ jobs:
       - name: Connect to vm using ssh
         run: ssh ${{ secrets.user_name }}@${{ secrets.host }}
 
+      - name: Debug - print hostname
+        run: hostname
+
       - name: Delete old /var/www/html
         run: sudo rm -rf /var/www/html
 
