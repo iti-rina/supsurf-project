@@ -1,0 +1,17 @@
+name: Deploy to vm
+on: [push]
+jobs:
+  deploy_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Create .ssh directory
+        run: echo "${{ secrets.ssh_key }}" > ~/.ssh/id_rsa && echo "${{ secrets.ssh_known_hosts }}" > ~/.ssh/known_hosts
+
+      - name: Delete old /var/www/html
+        run: rm -rf /var/www/html
+      
+      - name: Copy files to remote server
+        run: scp -r $PWD/* iti-rina@${{ secrets.host }}:/var/www/html
