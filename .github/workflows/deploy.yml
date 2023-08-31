@@ -13,14 +13,14 @@ jobs:
       - name: Create id_rsa and known_hosts
         run: echo "${{ secrets.ssh_key }}" > ~/.ssh/id_rsa && echo "${{ secrets.ssh_known_hosts }}" > ~/.ssh/known_hosts && chmod 600 ~/.ssh/id_rsa ~/.ssh/known_hosts
       
-      - name: Connect to vm using ssh
-        run: ssh ${{ secrets.user_name }}@${{ secrets.host }}
+      - name: Connect to vm using ssh and remove old version of app
+        run: ssh ${{ secrets.user_name }}@${{ secrets.host }} 'sudo rm -rf /var/www/html'
 
       - name: Debug - print hostname
         run: hostname
 
-      - name: Delete old /var/www/html
-        run: sudo rm -rf /var/www/html
+      - name: Debug - are files removed
+        run: ssh ${{ secrets.user_name }}@${{ secrets.host }} 'cd /var/www/html && TEST=$(ls -al) && echo $TEST'
 
       - name: Disconnect with vm
         run: exit
