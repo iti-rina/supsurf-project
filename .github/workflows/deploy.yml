@@ -20,7 +20,7 @@ jobs:
         run: hostname
 
       - name: Debug - are files removed
-        run: ssh ${{ secrets.user_name }}@${{ secrets.host }} 'cd /var/www/html && TEST=$(ls -al) && echo $TEST'
+        run: ssh ${{ secrets.user_name }}@${{ secrets.host }} 'cd /var/www && TEST=$(ls -al) && echo $TEST'
 
       - name: Disconnect with vm
         run: exit
