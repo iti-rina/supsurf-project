@@ -12,9 +12,15 @@ jobs:
 
       - name: Create id_rsa and known_hosts
         run: echo "${{ secrets.ssh_key }}" > ~/.ssh/id_rsa && echo "${{ secrets.ssh_known_hosts }}" > ~/.ssh/known_hosts && chmod 600 ~/.ssh/id_rsa ~/.ssh/known_hosts
+      
+      - name: Connect to vm using ssh
+        run: ssh ${{ secrets.user_name }}@${{ secrets.host }}
 
       - name: Delete old /var/www/html
         run: rm -rf /var/www/html
+
+      - name: Disconnect with vm
+        run: exit
       
       - name: Copy files to remote server
         run: scp -r $PWD/* iti-rina@${{ secrets.host }}:/var/www/html
