@@ -26,7 +26,7 @@ jobs:
         with:
           images: itirina/sup-image
           tags: |
-            type=semver,pattern={{version}},value=v1.0.0
+            type=semver,pattern={{version}}
       -
         name: Build and push
         uses: docker/build-push-action@v5
