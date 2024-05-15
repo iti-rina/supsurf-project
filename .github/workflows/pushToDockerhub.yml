@@ -24,7 +24,6 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: itirina/sup-image
-          tags: ${{ github.run_id }}
       -
         name: Build and push
         uses: docker/build-push-action@v5
