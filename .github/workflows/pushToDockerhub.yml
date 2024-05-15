@@ -18,13 +18,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PASS }}
-      - 
-        name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@v4
-        with:
-          images: itirina/sup-image
-          tags: ${{ github.run_id }} 
       -
         name: Build and push
         uses: docker/build-push-action@v5
@@ -32,4 +25,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ steps.meta.output.tags }}
+          tags: itirina/sup-image:${{ steps.meta.output.tags }}
