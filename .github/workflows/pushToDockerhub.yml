@@ -25,4 +25,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: itirina/sup-image:${{ github.run_id }}
+          tags: |
+            itirina/sup-image:${{ github.run_id }}
+            itirina/sup-image:latest
