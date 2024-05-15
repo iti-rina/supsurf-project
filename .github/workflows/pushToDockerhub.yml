@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - "main"
-    tags: v1.**
 
 jobs:
   build:
@@ -25,8 +24,6 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: itirina/sup-image
-          tags: |
-            type=semver,pattern={{version}}
       -
         name: Build and push
         uses: docker/build-push-action@v5
@@ -34,4 +31,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: ${{ GITHUB_RUN_ID }}
