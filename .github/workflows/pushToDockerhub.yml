@@ -25,4 +25,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: itirina/sup-image:${{ steps.meta.output.tags }}
+          tags: itirina/sup-image:${{ github.run_id }}
