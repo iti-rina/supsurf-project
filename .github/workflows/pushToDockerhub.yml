@@ -1,9 +1,10 @@
-name: ci
+name: Push Docker image to Dockerhub
 
 on:
   push:
     branches:
       - "main"
+    tags: v1.**
 
 jobs:
   build:
