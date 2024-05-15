@@ -32,4 +32,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ github.run_id }}
+          tags: ${{ steps.meta.output.tags }}
