@@ -9,6 +9,7 @@ on:
 env:
   IMAGE_PATH: "itirina/sup-image"
   CONTAINER_NAME: "sup19"
+  CERT_PATH: "/etc/letsencrypt/sup19ru"
 
 jobs:
   build-and-push:
@@ -63,5 +64,5 @@ jobs:
 
       - name: Start a new one
         run: |
-          ssh target-host "docker run --name=${CONTAINER_NAME} -p 80:80 -p 443:443 -d ${IMAGE_PATH}:${{ github.run_id }}"
+          ssh target-host "docker run --name=${CONTAINER_NAME} -p 80:80 -p 443:443 -v ${CERT_PATH}:${CERT_PATH} -d ${IMAGE_PATH}:${{ github.run_id }}"
 
