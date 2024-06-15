@@ -40,7 +40,7 @@ jobs:
       - name: Prepare ssh config
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_rsa
-          echo -e ${SSH_KEY} > ~/.ssh/id_rsa
+          echo -e ${{ secrets.DEPLOY_SSH_PRIVATE_KEY }} > ~/.ssh/id_rsa
           cat >>~/.ssh/config <<END
           Host target-host
             HostName $SSH_HOST
