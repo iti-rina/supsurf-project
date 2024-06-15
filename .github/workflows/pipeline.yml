@@ -29,8 +29,8 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ${IMAGE_PATH}:${{ github.run_id }}
-            ${IMAGE_PATH}:latest
+            ${{ env.IMAGE_PATH }}:${{ github.run_id }}
+            ${{ env.IMAGE_PATH }}:latest
 
 
   deploy:
